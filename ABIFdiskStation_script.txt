@@ -1,0 +1,3 @@
+touch "/volume1/share/.keep1"
+find "/volume1/share" -ctime +15 -type f -exec rm -rf {} \;
+find "/volume1/share/" -type d -depth -exec rmdir {} \;
